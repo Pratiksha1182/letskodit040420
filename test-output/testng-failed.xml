@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testsuit]">
+  <listeners>
+    <listener class-name="com.letslodeit.learn.listeners.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="SignUpTest(failed)">
+    <classes>
+      <class name="com.letslodeit.learn.testsuit.SignUpTest">
+        <methods>
+          <include name="verifyUserIsAbleToSignUpSuccessfully"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.letslodeit.learn.testsuit.SignUpTest -->
+    </classes>
+  </test> <!-- SignUpTest(failed) -->
+</suite> <!-- Failed suite [testsuit] -->

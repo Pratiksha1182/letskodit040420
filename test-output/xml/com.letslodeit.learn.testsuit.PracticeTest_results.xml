@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PracticeTest"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="27.497">
+  <properties />
+  
+  
+            <testcase name="verifyUserIsAbleToUseMouseHoverFunction" time="9.065" classname="com.letslodeit.learn.testsuit.PracticeTest" />
+                <testcase name="verifyUserIsAbelToUsePracticePageFunctions" time="18.432" classname="com.letslodeit.learn.testsuit.PracticeTest" />
+      
+</testsuite>

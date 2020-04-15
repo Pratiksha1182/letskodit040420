@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class PracticePage extends Utility {
     By hondaRadioBtn = By.id("hondaradio");
-    By selectClassCars = By.id("carselect");
+    By selectClassCars = By.xpath("//select[@id='carselect']");
     By selectPeachOption = By.xpath("//option[contains(text(),'Peach')]");
     By selectHondaCheckBox = By.id("hondacheck");
     By yourNameField = By.id("name");
@@ -14,10 +14,12 @@ public class PracticePage extends Utility {
     By selectTop = By.xpath("//a[contains(text(),'Top')]");
 
     public void clickOnHondaRadioButton() { clickOnElement(hondaRadioBtn); }
-    public void clickOnSelectCarsAndSelectHonda(){ selectByVisibleTextFromDropDown(selectClassCars,"Honda");}
+    public void clickOnSelectCarsAndSelectHonda(String cars){
+        clickOnElement(selectClassCars);
+        selectByVisibleTextFromDropDown(selectClassCars, cars);}
     public void clickOnPeachOption(){clickOnElement(selectPeachOption);}
     public void clickOnHondaCheckBox(){clickOnElement(selectHondaCheckBox);}
-    public void enterNameInYourNameField(){ sendTextToElement(yourNameField,"Pratiksha");}
+    public void enterNameInYourNameField(String name){ sendTextToElement(yourNameField, name);}
     public void clickOnAlertButton(){ clickOnElement(alertbutton);}
     public void mouseHoverOnMouseHoverButton(){mouseHoverToElementAndClick(mousehoverbutton);}
     public void clickOnTop(){clickOnElement(selectTop);}

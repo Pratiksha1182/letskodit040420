@@ -13,10 +13,10 @@ public class SignUpPage extends Utility {
     By iAgreeToTheTermsAndConditions = By.id("user_agreed_to_terms");
     By signUpButton = By.className("btn btn-primary btn-md signup-button");
 
-    public void enterFullName(){ sendTextToElement(fullNameTextField,"Pratiksha");}
-    public void enterEmailAddress(){ sendTextToElement(emailAddressTextField,"patty_appu@yahoo.co.uk");}
-    public void enterPassword(){ sendTextToElement(passwordTextField,"2810om");}
-    public void enterConfirmPassword(){ sendTextToElement(confirmPasswordField,"2810om");}
+    public void enterFullName( String name){ sendTextToElement(fullNameTextField, name);}
+    public void enterEmailAddress(String Email){ sendTextToElement(emailAddressTextField, Email);}
+    public void enterPassword(String Password){ sendTextToElement(passwordTextField, Password);}
+    public void enterConfirmPassword(String ConfirmPassword){ sendTextToElement(confirmPasswordField, ConfirmPassword);}
     public void clickOnReCaptchaCheckBox(){clickOnElement(reCaptcha);}
     public void clickOnIAgreeToTheTermsAndConditionsCheckBox(){clickOnElement(iAgreeToTheTermsAndConditions);}
     public void clickOnSignUpButton(){clickOnElement(signUpButton);}

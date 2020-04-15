@@ -12,10 +12,10 @@ public class SignUpTest extends TestBase {
     @Test
     public void verifyUserIsAbleToSignUpSuccessfully(){
         homepage.clickOnSignUpButton();
-        signUpPage.enterFullName();
-        signUpPage.enterEmailAddress();
-        signUpPage.enterPassword();
-        signUpPage.enterConfirmPassword();
+        signUpPage.enterFullName("Pratiksha");
+        signUpPage.enterEmailAddress("patty_appu@yahoo.co.uk");
+        signUpPage.enterPassword("2810om");
+        signUpPage.enterConfirmPassword("2810om");
         signUpPage.clickOnReCaptchaCheckBox();
         signUpPage.clickOnIAgreeToTheTermsAndConditionsCheckBox();
         signUpPage.clickOnSignUpButton();
